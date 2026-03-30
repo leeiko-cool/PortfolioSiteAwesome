@@ -16,6 +16,17 @@
 	text-a
 }
 
+.contacttop{
+position: fixed;
+  margin: -20px;
+   left: 0;
+   top: 3%;
+   width: 100%;
+   height: auto;
+   text-align: right;
+   z-index: -100;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -45,8 +56,22 @@ movingtext {
 
 }
 
-movingtext img {
+movingtext:hover{
+  		transition: 0.4s;
+  font-size: 3rem;
+        pointer-events: none;
+		
+
 }
+
+movingtext img:hover{
+      transition: 0.4s;
+	  width: 450px;
+	  height: auto;
+      pointer-events: auto;
+	  
+}
+
 
 movingtext.f1 {
   animation: f1 2.5s infinite;
